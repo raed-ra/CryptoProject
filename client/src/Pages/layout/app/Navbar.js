@@ -30,3 +30,4 @@ export const NavigationBar = () => (
       </Navbar.Collapse>
     </Navbar>
   </Styles>
+)

@@ -5,17 +5,17 @@ const { Strategy: LocalStrategy } = require("passport-local");
 let FacebookStrategy = require('passport-facebook').Strategy
 
 passport.serializeUser((user, done) => {
-  console.log('serialize user');
-  console.log({user});
+  // console.log('serialize user');
+  // console.log({user});
   done(null, user.id);
 });
 
 passport.deserializeUser((id, done) => {
-    console.log("deserialize user");
+    // console.log("deserialize user");
 
     User.findById(id, (err, user) => {
-        console.log('deserialise');
-        console.log({user});
+        // console.log('deserialise');
+        // console.log({user});
         done(err, user);
     });
 });

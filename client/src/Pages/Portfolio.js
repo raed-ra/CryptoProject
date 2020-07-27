@@ -1,6 +1,6 @@
 import React from 'react';
 import AppMaster from './layout/app/AppMaster'
-import PortfolioContainer from '../containers/Portfolio/post/PortfolioContainer';
+import PortfolioDashboard from '../Pages/layout/app/PortfolioDashboard';
 
 function Portfolio(){
 
@@ -9,7 +9,7 @@ function Portfolio(){
 
     return (
         <AppMaster>
-            <PortfolioContainer/>            
+            <PortfolioDashboard/>            
 
             {/* profile page */}
             {/* profile page */}

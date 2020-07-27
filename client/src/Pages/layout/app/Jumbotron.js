@@ -1,7 +1,7 @@
 import React from 'react'
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import background from '../assets/coins.jpg';
+import background from '../../../assets/bitcoin.jpg';
 
 
 const Styles = styled.div`
@@ -12,6 +12,7 @@ const Styles = styled.div`
         innerHeight: 200px;
         position: relative;
         z-index:-2;
+        marginBottom: 0!important;
     }
 
     .overlay {
@@ -26,9 +27,10 @@ const Styles = styled.div`
     }
     `;
 
+
     export const Jumbotron = () => (
         <Styles>
-            <Jumbo fluid className="jumbo">
+            <Jumbo fluid className="jumbo" style={{marginBottom: 0}}> 
                 <div className="overlay"></div>
                 <Container>
                     <h1>Welcome</h1>
